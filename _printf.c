@@ -3,8 +3,11 @@
 
 /**
  * print_letter - prints single letter
+ * 
  * @format: the string format
+ * 
  * @index: index of the letterin the format
+ * 
  * Return: 1(length of the letter)
  */
 
