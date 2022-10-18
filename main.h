@@ -35,5 +35,6 @@ int pnt_plus_int(va_list, char *buffer);
 int pnt_space_int(va_list, char *buffer);
 int pnt_o_octal(va_list, char *buffer);
 int pnt_upp_hex(va_list, char *buffer);
+char *rot13(va_list list);
 
 #endif
