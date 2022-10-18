@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * print_letter - prints single letter
  *
  * @format: the string format
