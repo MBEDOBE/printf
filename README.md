@@ -26,7 +26,7 @@ ________________________________________________________________________
 # print_str.c
 A function used to Write string to standard output(Stdout).
 ______________________________________________________________________
-# print_buf.c
+# print_buffer.c
 A function used to Write a buffer to standard output(Stdout).
 ______________________________________________________________________
 # print_bin.c
