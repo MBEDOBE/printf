@@ -19,7 +19,7 @@ int print_letter(const char *format, int index)
 		return (-1);
 	str[0] = format[index];
 
-	l = _print_buf(str, 1);
+	l = _print_buffer(str, 1);
 	free(str);
 
 	return (l);
