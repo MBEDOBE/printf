@@ -15,14 +15,14 @@ int (*get_pnt_funct(const char *s, int *pos))(va_list args, char *buf)
 	print_t pnt[] = { {"c", print_char}, {"s", print_str},
 		{"d", print_int}, {"i", print_int},
 		{"b", print_bin}, {"u", print_unint},
-		{"x", print_dex}, {"X", print_unsgnd},
+		{"x", print_shex}, {"X", print_chex},
 		{"S", custom_str}, {"p", print_address},
-		{"+d", prnt_plus_int}, {"+i", prnt_plus_int},
-		{" d", prnt_space_int}, {" i", prnt_space_int},
-		{"o", print_octal}, {"#o", prnt_o_octal},
-		{"#x", print_address}, {"#X", prnt_upp_hex},
-		{" +d", prnt_plus_int}, {"+ d", prnt_plus_int},
-		{" +i", prnt_plus_int}, {"+ i", prnt_plus_int},
+		{"+d", pnt_plus_int}, {"+i", pnt_plus_int},
+		{" d", pnt_space_int}, {" i", pnt_space_int},
+		{"o", print_octal}, {"#o", pnt_o_octal},
+		{"#x", print_address}, {"#X", pnt_upp_hex},
+		{" +d", pnt_plus_int}, {"+ d", pnt_plus_int},
+		{" +i", pnt_plus_int}, {"+ i", pnt_plus_int},
 		{NULL, NULL}};
 
 	int i, j, k = 0;

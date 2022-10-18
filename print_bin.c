@@ -56,7 +56,7 @@ int print_bin(va_list args, char *buffer)
 	if (num == 0)
 	{
 		buffer[0] = '0';
-		_print_buffer(buffer, 1);
+		_print_buf(buffer, 1);
 		return (1);
 	}
 
@@ -76,7 +76,7 @@ int print_bin(va_list args, char *buffer)
 		return (-1);
 	rever_binary(binary, quotient, size);
 
-	_print_buffer(binary, size);
+	_print_buf(binary, size);
 	free(binary);
 
 	return (size);

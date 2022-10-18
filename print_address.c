@@ -23,12 +23,12 @@ int print_address(va_list args, char *buffer)
 	if (addr == 0)
 	{
 		buffer[i] = '0', i++;
-		return (_print_buffer(buffer, i));
+		return (_print_buf(buffer, i));
 	}
 	if (!addr)
 	{
 		buffer = "(nil)";
-		return (_print_buffer(buffer, 5));
+		return (_print_buf(buffer, 5));
 	}
 	a = addr;
 	buffer[i] = '0', i++, buffer[i] = 'x', i++;
@@ -49,5 +49,5 @@ int print_address(va_list args, char *buffer)
 		buffer[i] = lett, i++, addr %= b;
 	}
 
-	return (_print_buffer(buffer, i));
+	return (_print_buf(buffer, i));
 }

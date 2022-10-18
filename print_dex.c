@@ -2,8 +2,8 @@
 
 
 /**
- * print_dex - prints unsigned integer number
- * small hexadecimal value
+ * print_chex - prints unsigned integer number
+ * capital  hexadecimal value
  *
  * @args: argument of integer type
  * @buffer: pointer of 1byte size
@@ -11,7 +11,7 @@
  * Return: number of bytes printed
  */
 
-int print_dex(va_list args, char *buffer)
+int print_chex(va_list args, char *buffer)
 {
 	unsigned int num;
 	unsigned int pos_num, b, digit_num = 1, i = 0;
@@ -35,8 +35,8 @@ int print_dex(va_list args, char *buffer)
 		lett = (b + '0');
 
 		if (b > 9)
-			lett = ((b + 39) + '0');
+			lett = ((b + 7) + '0');
 		buffer[i] = lett, i++, pos_num %= digit_num;
 	}
-	return (_print_buffer(buffer, i));
+	return (_print_buf(buffer, i));
 }

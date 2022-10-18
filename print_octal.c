@@ -32,5 +32,5 @@ int print_octal(va_list args, char *buffer)
 		lett = ((pos_num / digit_num) + 48);
 		buffer[i] = lett, i++, pos_num %= digit_num;
 	}
-	return (_print_buffer(buffer, i));
+	return (_print_buf(buffer, i));
 }
