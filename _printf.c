@@ -9,7 +9,7 @@
  *
  * Return: length of the letter
  */
-int print_letter(const char *format, in index)
+int print_letter(const char *format, int index)
 {
 	char *str;
 	int l;
