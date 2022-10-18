@@ -26,8 +26,8 @@ int custom_hex(int ascii)
 		b /= 16;
 	}
 
-	l += _print_buf(&slash, 1);
-	l += _print_buf(&x, 1);
+	l += _print_buffer(&slash, 1);
+	l += _print_buffer(&x, 1);
 
 	for (; digit > 0; digit /= 16)
 	{
@@ -39,9 +39,9 @@ int custom_hex(int ascii)
 			lett = (num / digit) + '0';
 
 		if (digit == 1 && l == 2)
-			l += _print_buf(&zero, 1);
+			l += _print_buffer(&zero, 1);
 
-		l += _print_buf(&lett, 1);
+		l += _print_buffer(&lett, 1);
 		num %= digit;
 	}
 
@@ -70,7 +70,7 @@ int custom_str(va_list args, char *buffer)
 	if (!buffer)
 	{
 		null = "(null)";
-		return (_print_buf(null, 6));
+		return (_print_buffer(null, 6));
 	}
 
 	for (; buffer[i] != '\0'; i++)
@@ -82,7 +82,7 @@ int custom_str(va_list args, char *buffer)
 		else
 		{
 			lett = buffer[i];
-			len += _print_buf(&lett, 1);
+			len += _print_buffer(&lett, 1);
 		}
 	}
 
