@@ -4,7 +4,7 @@
  * @list: string to change
  * Return: modified string
  */
-char *rot13(va_list list)
+char prnt_rot13(va_list list)
 {
 	int i = 0;
 	char *str;
