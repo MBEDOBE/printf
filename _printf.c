@@ -1,33 +1,5 @@
 #include "main.h"
 
-
-/**
- * print_letter - prints single letter
- * 
- * @format: the string format
- * 
- * @index: index of the letterin the format
- * 
- * Return: 1(length of the letter)
- */
-
-int print_letter(const char *format, int index)
-{
-	char *str;
-	int l;
-
-	str = malloc(sizeof(char));
-
-	if (str == NULL)
-		return (-1);
-	str[0] = format[index];
-
-	l = _print_buf(str, 1);
-	free(str);
-
-	return (l);
-}
-
 /**
  * _printf - formated output and data conversation
  *
