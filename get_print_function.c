@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * get_pnt_funct - returns the printer function
