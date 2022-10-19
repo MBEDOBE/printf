@@ -12,7 +12,7 @@
  *
  * Return: none
  */
-typedef struct print
+typedef struct printt
 {
 	char *conv_spec;
 	int (*f)(va_list, char *);
